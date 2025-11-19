@@ -203,7 +203,7 @@ input, select {
 --------------------------------------------------- */
 .reviews {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #111;
     padding: 30px;
     border-radius: 10px;
@@ -211,6 +211,16 @@ input, select {
     font-size: 18px;
 }
 
+.tarjetaReview {
+    width: 280px;
+    background-color: #111;
+    padding: 20px;
+}
+
+.tarjetaReview img {
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* ---------------------------------------------------
    FOOTER ELEGANTE
