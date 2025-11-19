@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Meat</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CONTENEDOR PRINCIPAL / HERO -->
+    <div class="principal">
+        <header>
+            <!-- LOGO -->
+            <img src="WebDesign_HectorHugo/logoBlanco_trans.png" alt="">
+
+            <!-- NAVEGACIÓN -->
+            <ul>
+                <a href="">LETTER</a>
+                <a href="">LOCATION</a>
+                <a href="">BOOKING</a>
+            </ul>
+        </header>
+
+        <!-- SECCIÓN HERO (portada) -->
+        <div class="hero">
+            <div class="title">
+                <h1>PREHISTORIC MEAT</h1>
+                <h2>Grilled meat, fish, vegetables...</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN PRODUCTO / DESCRIPCIÓN -->
+    <div class="section">
+        <div class="sectionTitle">
+            <h2>PREHISTORIC MEAT</h2>
+        </div>
+
+        <div class="content">
+            <p>Discover ...</p>
+
+            <!-- Tarjeta 1 de producto -->
+            <div class="tarjeta1">
+                <img src="img/filete1.jpg" alt="">
+                <h4>SABERTOOTH FILET</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE LOCALIZACIÓN -->
+    <div class="section">
+        <div class="sectionTitle">
+            <h2>LOCATION</h2>
+        </div>
+
+        <div class="content">
+        <!-- INFORMACIÓN -->
+        <div class="inf">
+            <b>Direction</b><br>
+            Carrer D'Alberic, 18, Extramurs, <br>
+            46008 València, Valencia <br><br>
+
+            <b>Phone Number</b><br>
+            +34 123 45 67 89 <br><br>
+
+            <b>E-mail</b><br>
+            Example@gmail.com
+        </div>
+
+        <!-- IMAGEN DEL MAPA O FOTO -->
+        <div class="image">
+            <img href="">
+        </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE RESERVA -->
+    <div class="section">
+        <div class="sectionTitle">
+            <h2>BOOKING</h2>
+        </div>
+
+        <div class="content">
+        
+        <!-- FORMULARIO DE RESERVA -->
+        <div class="form2">
+            <form class="formContainer">
+
+                <!-- NOMBRE -->
+                <div class="nombre">
+                    <label for="nombre"><b>Name: </b></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Laura Gómez" required>
+                    <br>
+                </div>
+
+                <!-- TELÉFONO -->
+                <div class="telefono">
+                    <label for="telefono"><b>Teléfono: </b></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
+                    <br>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="email">
+                    <label for="email"><b>Email: </b></label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@mail.com">
+                    <br>
+                </div>
+
+                <!-- NÚMERO DE PERSONAS -->
+                <div class="personas">
+                    <label for="personas"><b>Personas: </b></label>
+                    <select id="personas" name="personas" required>
+                        <option value="">Selecciona...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6 o más</option>
+                    </select>
+                    <br>
+                </div>
+
+                <!-- FECHA -->
+                <div class="fecha">
+                    <label for="fecha"><b>Fecha: </b></label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <!-- HORA -->
+                <div class="hora">
+                    <label for="hora"><b>Hora: </b></label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <br>
+
+                <!-- BOTÓN DE ENVÍO -->
+                <div class="boton">
+                    <button type="submit" class="btn"><b>Enviar reserva</b></button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE RESEÑAS -->
+    <div class="section">
+        <div class="sectionTitle">
+            <h2>REVIEWS</h2>
+        </div>
+
+        <!-- Aquí van tarjetas o comentarios de clientes -->
+        <div class="reviews"></div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="numeroTelef">
+            <p><b>PHONE NUMBER</b></p><br>
+            <p><b>+34 123 45 67 89</b></p>
+        </div>
+
+        <div class="logo">
+            <img src="WebDesign_HectorHugo/logoBlanco_trans.png" alt="">
+        </div>
+
+        <div class="emailFoot">
+            <p><b>E-MAIL</b></p><br>
+            <p><b>EJEMPLO@GMAIL.COM</b></p><br>
+        </div>
+    </footer>
+
+</body>
+</html>
