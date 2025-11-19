@@ -104,7 +104,7 @@ header {
     gap: 40px;
 }
 
-.tarjeta {
+.tarjetaMenu {
     width: 280px;
     background-color: #111;
     border: 2px solid #c68642;
@@ -113,22 +113,22 @@ header {
     text-align: center;
 }
 
-.tarjeta img {
+.tarjetaMenu img {
     width: 100%;
     border-radius: 10px;
 }
 
-.tarjeta h4 {
+.tarjetarjetaMenuta h4 {
     font-size: 22px;
     margin-top: 10px;
 }
 
-.tarjeta p {
+.tarjetaMenu p {
     font-size: 14px;
     color: #ccc;
 }
 
-.tarjeta span {
+.tarjetaMenu span {
     font-size: 20px;
     color: #c68642;
     font-weight: bold;
