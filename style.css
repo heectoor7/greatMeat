@@ -1,183 +1,225 @@
 /* ---------------------------------------------------
-   ESTILOS GENERALES DEL BODY
+   TIPOGRAFÍAS Y ESTILOS GENERALES
 --------------------------------------------------- */
+
 body {
-    background: url(img/fondoBody.jpg);
-    background-attachment: fixed;
     margin: 0;
-    max-width: 1920px;
+    background: url(img/fondoBody.jpg) center/cover fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
-/* ---------------------------------------------------
-   SECCIÓN PRINCIPAL / HERO
---------------------------------------------------- */
-.principal {
-    background-image: url(img/fondo2.jpg);
-    background-size: cover;
+/* Títulos elegantes */
+h1, h2, h4 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
 }
 
+
 /* ---------------------------------------------------
-   CABECERA / MENÚ DE NAVEGACIÓN
+   HEADER PROFESIONAL
 --------------------------------------------------- */
+
 header {
     display: flex;
-    justify-content: space-evenly;
-    background: linear-gradient(#3d3d3d96, #a3a3a300);
-    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: linear-gradient(#000000c0, #00000000);
 }
 
-/* Lista de navegación dentro del header */
-header ul {
+.logoHeader {
+    height: 80px;
+}
+
+.nav {
+    list-style: none;
     display: flex;
-    flex: 20%;
-    justify-content: space-evenly;
+    gap: 40px;
 }
 
-/* Enlaces del menú */
-header a {
-    color: white;
+.nav a {
     text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
 }
+
+.nav a:hover {
+    color: #c68642;
+}
+
 
 /* ---------------------------------------------------
-   HERO (título grande)
+   HERO
 --------------------------------------------------- */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     height: 650px;
-}
-
-/* Estilo del título principal */
-.hero .title h1 {
-    font-size: 70px;
-}
-
-/* Contenedor de textos del hero */
-.title {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 900px;
-    padding: 20px;
-    text-shadow: 0 0 10px #c68642;
-    color: white;
-    border-radius: 25px;
 }
+
+.title h1 {
+    font-size: 80px;
+}
+
+.title h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
 
 /* ---------------------------------------------------
    SECCIONES GENERALES
 --------------------------------------------------- */
 .section {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    height: 550px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding: 60px 120px;
 }
 
-/* Título de cada sección */
-.section .sectionTitle {
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sectionTitle h2 {
+    font-size: 40px;
+    border-bottom: 3px solid #c68642;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------
+   MENÚ (TARJETAS)
+--------------------------------------------------- */
+.menuContent {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100px;
-    flex: 100%;
-    background-color: #000000c6;
+    gap: 40px;
+}
+
+.tarjeta {
+    width: 280px;
+    background-color: #111;
     border: 2px solid #c68642;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Contenido dentro de las secciones */
-.section .content {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    height: 450px;
-    flex: 100%;
-    background-color: #000000c6;
-    border-radius: 0 0 10px 10px;
-}
-
-/* Tarjeta del producto */
-.section .content .tarjeta1 {
-    background-color: #c68642;
-    height: 250px;
-    padding: 10px;
+.tarjeta img {
+    width: 100%;
     border-radius: 10px;
 }
 
-/* Imagen dentro de la tarjeta */
-.section .content .tarjeta1 img {
-    width: 250px;
-    height: 200px;
-}
-
-/* ---------------------------------------------------
-   SECCIÓN DE RESERVA (3 columnas)
---------------------------------------------------- */
-
-/* Contenedor del formulario */
-.form2 .formContainer {
-    border: 3px solid #c68642;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding: 80px;
-}
-
-/* Espaciado interno de campos */
-.form2 .formContainer .nombre {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.form2 .formContainer .email,
-.form2 .formContainer .fecha,
-.form2 .formContainer .boton {
+.tarjeta h4 {
+    font-size: 22px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-.form3 {
-    flex: 33%;
+.tarjeta p {
+    font-size: 14px;
+    color: #ccc;
 }
+
+.tarjeta span {
+    font-size: 20px;
+    color: #c68642;
+    font-weight: bold;
+}
+
 
 /* ---------------------------------------------------
-   SECCIÓN LOCALIZACIÓN
+   LOCALIZACIÓN
 --------------------------------------------------- */
-.inf {
-    flex: 50%;
-    justify-content: center;
-    text-align: center;
+.locationContent {
+    display: flex;
+    justify-content: space-between;
 }
 
-.image {
-    flex: 50%;
-    justify-content: center;
-    text-align: center;
+.locationContent .image img {
+    width: 450px;
+    border-radius: 10px;
 }
+
+.inf {
+    font-size: 18px;
+}
+
 
 /* ---------------------------------------------------
-   PIE DE PÁGINA
+   FORMULARIO RESERVA
+--------------------------------------------------- */
+.bookingContent {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer {
+    border: 3px solid #c68642;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+    background-color: #000000a8;
+    border-radius: 10px;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.btn {
+    background-color: #c68642;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a06a35;
+}
+
+
+/* ---------------------------------------------------
+   REVIEWS
+--------------------------------------------------- */
+.reviews {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* ---------------------------------------------------
+   FOOTER ELEGANTE
 --------------------------------------------------- */
 footer {
-    display: flex;
-    flex-direction: row;
     background-color: #c68642;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
 }
 
-/* Tres columnas del footer */
-footer .numeroTelef,
-footer .logo,
-footer .emailFoot {
-    flex: 33%;
-    text-align: center;
+footer img {
+    height: 100px;
+}
+
+footer p {
+    font-size: 16px;
 }

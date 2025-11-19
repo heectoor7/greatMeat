@@ -6,174 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great Meat</title>
 
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CONTENEDOR PRINCIPAL / HERO -->
+    <!-- HERO Y HEADER -->
     <div class="principal">
         <header>
             <!-- LOGO -->
-            <img src="img/logoBlanco_trans.png" alt="">
+            <img src="img/logoBlanco_trans.png" alt="Logo Great Meat" class="logoHeader">
 
             <!-- NAVEGACIÓN -->
-            <ul>
-                <a href="">LETTER</a>
-                <a href="">LOCATION</a>
-                <a href="">BOOKING</a>
+            <ul class="nav">
+                <li><a href="#letter">LETTER</a></li>
+                <li><a href="#location">LOCATION</a></li>
+                <li><a href="#booking">BOOKING</a></li>
             </ul>
         </header>
 
-        <!-- SECCIÓN HERO (portada) -->
+        <!-- HERO -->
         <div class="hero">
             <div class="title">
-                <h1>PREHISTORIC MEAT</h1>
-                <h2>Grilled meat, fish, vegetables...</h2>
+                <h1>GREAT MEAT</h1>
+                <h2>Fine meat cuts, grilled with mastery.</h2>
             </div>
         </div>
     </div>
 
-    <!-- SECCIÓN PRODUCTO / DESCRIPCIÓN -->
-    <div class="section">
+
+    <!-- MENÚ DEL RESTAURANTE -->
+    <div class="section" id="letter">
         <div class="sectionTitle">
-            <h2>PREHISTORIC MEAT</h2>
+            <h2>OUR BEST CUTS</h2>
         </div>
 
-        <div class="content">
-            <p>Discover ...</p>
+        <div class="content menuContent">
 
-            <!-- Tarjeta 1 de producto -->
-            <div class="tarjeta1">
+            <div class="tarjeta">
                 <img src="img/filete1.jpg" alt="">
-                <h4>SABERTOOTH FILET</h4>
+                <h4>Sabertooth Filet</h4>
+                <p>350g premium dry-aged cut. Tender, smoky and intense flavor.</p>
+                <span>25€</span>
             </div>
+
+            <div class="tarjeta">
+                <img src="img/filete2.jpg" alt="">
+                <h4>Mammoth Ribeye</h4>
+                <p>450g ribeye fired on volcanic rock grill.</p>
+                <span>32€</span>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/filete3.jpg" alt="">
+                <h4>Jurassic T-Bone</h4>
+                <p>A massive cut for true carnivore lovers. Perfect to share.</p>
+                <span>45€</span>
+            </div>
+
         </div>
     </div>
 
-    <!-- SECCIÓN DE LOCALIZACIÓN -->
-    <div class="section">
+
+    <!-- LOCALIZACIÓN -->
+    <div class="section" id="location">
         <div class="sectionTitle">
             <h2>LOCATION</h2>
         </div>
 
-        <div class="content">
-        <!-- INFORMACIÓN -->
-        <div class="inf">
-            <b>Direction</b><br>
-            Carrer D'Alberic, 18, Extramurs, <br>
-            46008 València, Valencia <br><br>
+        <div class="content locationContent">
 
-            <b>Phone Number</b><br>
-            +34 123 45 67 89 <br><br>
+            <!-- INFO -->
+            <div class="inf">
+                <b>Address</b><br>
+                Carrer D'Alberic, 18, Extramurs<br>
+                46008 València, Spain<br><br>
 
-            <b>E-mail</b><br>
-            Example@gmail.com
-        </div>
+                <b>Phone</b><br>
+                +34 123 45 67 89<br><br>
 
-        <!-- IMAGEN DEL MAPA O FOTO -->
-        <div class="image">
-            <img src="img/mapa.png" alt="Imagen de la ubicación" style="width: 450px;">
-        </div>
+                <b>Email</b><br>
+                contacto@greatmeat.com
+            </div>
+
+            <!-- MAPA -->
+            <div class="image">
+                <img src="img/mapa.png" alt="Ubicación restaurante">
+            </div>
+
         </div>
     </div>
 
-    <!-- SECCIÓN DE RESERVA -->
-    <div class="section">
+
+    <!-- RESERVAS -->
+    <div class="section" id="booking">
         <div class="sectionTitle">
             <h2>BOOKING</h2>
         </div>
 
-        <div class="content">
-        
-        <!-- FORMULARIO DE RESERVA -->
-        <div class="form2">
-            <form class="formContainer">
+        <div class="content bookingContent">
 
-                <!-- NOMBRE -->
-                <div class="nombre">
-                    <label for="nombre"><b>Name: </b></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Laura Gómez" required>
-                    <br>
-                </div>
+            <!-- FORMULARIO DE RESERVA -->
+            <div class="form2">
+                <form class="formContainer">
 
-                <!-- TELÉFONO -->
-                <div class="telefono">
-                    <label for="telefono"><b>Teléfono: </b></label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
-                    <br>
-                </div>
+                    <div class="formGroup">
+                        <label for="nombre"><b>Name:</b></label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Laura Gómez" required>
+                    </div>
 
-                <!-- EMAIL -->
-                <div class="email">
-                    <label for="email"><b>Email: </b></label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@mail.com">
-                    <br>
-                </div>
+                    <div class="formGroup">
+                        <label for="telefono"><b>Phone:</b></label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
+                    </div>
 
-                <!-- NÚMERO DE PERSONAS -->
-                <div class="personas">
-                    <label for="personas"><b>Personas: </b></label>
-                    <select id="personas" name="personas" required>
-                        <option value="">Selecciona...</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6 o más</option>
-                    </select>
-                    <br>
-                </div>
+                    <div class="formGroup">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@mail.com">
+                    </div>
 
-                <!-- FECHA -->
-                <div class="fecha">
-                    <label for="fecha"><b>Fecha: </b></label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
+                    <div class="formGroup">
+                        <label for="personas"><b>Guests:</b></label>
+                        <select id="personas" name="personas" required>
+                            <option value="">Select...</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6+</option>
+                        </select>
+                    </div>
 
-                <!-- HORA -->
-                <div class="hora">
-                    <label for="hora"><b>Hora: </b></label>
-                    <input type="time" id="hora" name="hora" required>
-                </div>
+                    <div class="formGroup">
+                        <label for="fecha"><b>Date:</b></label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
 
-                <br>
+                    <div class="formGroup">
+                        <label for="hora"><b>Time:</b></label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
 
-                <!-- BOTÓN DE ENVÍO -->
-                <div class="boton">
-                    <button type="submit" class="btn"><b>Enviar reserva</b></button>
-                </div>
-            </form>
+                    <button type="submit" class="btn">SEND BOOKING</button>
+                </form>
             </div>
+
         </div>
     </div>
 
-    <!-- SECCIÓN DE RESEÑAS -->
+
+    <!-- REVIEWS -->
     <div class="section">
         <div class="sectionTitle">
-            <h2>REVIEWS</h2>
+            <h2>CUSTOMER REVIEWS</h2>
         </div>
 
-        <!-- Aquí van tarjetas o comentarios de clientes -->
-        <div class="reviews"></div>
+        <div class="reviews">
+            <p>⭐ “Best steak I’ve had in Valencia.” – Carlos</p>
+            <p>⭐ “Amazing service and premium cuts.” – Julia</p>
+        </div>
     </div>
 
-    <!-- PIE DE PÁGINA -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="numeroTelef">
-            <p><b>PHONE NUMBER</b></p><br>
-            <p><b>+34 123 45 67 89</b></p>
+            <p><b>PHONE</b></p>
+            <p>+34 123 45 67 89</p>
         </div>
 
         <div class="logo">
-            <img src="WebDesign_HectorHugo/logoBlanco_trans.png" alt="">
+            <img src="img/logoBlanco_trans.png" alt="Logo">
         </div>
 
         <div class="emailFoot">
-            <p><b>E-MAIL</b></p><br>
-            <p><b>EJEMPLO@GMAIL.COM</b></p><br>
+            <p><b>EMAIL</b></p>
+            <p>contacto@greatmeat.com</p>
         </div>
     </footer>
 
