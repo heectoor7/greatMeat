@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: url(img/fondoBody.jpg) center/cover fixed;
+    background: url(img/fondo2.jpg) center/cover fixed;
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
@@ -16,9 +16,7 @@ h1, h2, h4 {
 }
 
 
-/* ---------------------------------------------------
-   HEADER 
---------------------------------------------------- */
+/*HEADER*/
 
 header {
     display: flex;
@@ -96,7 +94,7 @@ header {
 
 
 /* ---------------------------------------------------
-   MENÚ (TARJETAS)
+   MENÚ
 --------------------------------------------------- */
 .menuContent {
     display: flex;
@@ -154,7 +152,7 @@ header {
 
 
 /* ---------------------------------------------------
-   FORMULARIO RESERVA
+   FORMULARIO
 --------------------------------------------------- */
 .bookingContent {
     display: flex;
@@ -204,7 +202,6 @@ input, select {
 .reviews {
     display: flex;
     justify-content: center;
-    background-color: #111;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -213,7 +210,6 @@ input, select {
 
 .tarjetaReview {
     width: 280px;
-    background-color: #111;
     padding: 20px;
 }
 
@@ -222,8 +218,18 @@ input, select {
     border-radius: 10px;
 }
 
+.flechasReview {
+    margin-top: 100px;
+    color: #c68642;
+    font-size: 50px;
+}
+
+.flechasReview:hover {
+    cursor: pointer;
+}
+
 /* ---------------------------------------------------
-   FOOTER ELEGANTE
+   FOOTER
 --------------------------------------------------- */
 footer {
     background-color: #c68642;
@@ -233,7 +239,7 @@ footer {
 }
 
 footer img {
-    height: 100px;
+    height: 150px;
 }
 
 footer p {
